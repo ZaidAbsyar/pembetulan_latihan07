@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borang Pendaftaran</title>
+</head>
+<body>
+    <h2>Borang Pendaftaran</h2>
+    <form action="simpan.php" method="post"></form>
+
+<table>
+    <tr>
+        <td><label for="namapenuh">Nama Penuh:</label></td>
+        <td><input type="text" name="namapenuh" id="namapenuh"></td>
+    </tr>
+    <tr>
+        <td><label for="alamat">Alamat:</label></td>
+        <td><input type="text" name="alamat" id="alamat"></td>
+    </tr>
+    <tr>
+        <td><label for="notelefon">No. Telefon:</label></td>
+        <td><input type="text" name="notelefon" id="notelefon"></td>
+    </tr>
+    <tr>
+        <td>Negeri:</td>
+        <td>
+            <input type="text" name="negeri" id="negeri" list="senarai">
+            <datalist id="senarai">
+                <option value="Perlis">
+                <option value="Kedah">
+                <option value="Perak">
+                <option value="selangor">
+                <option value="Kelantan">    
+                <option value="Terengganu">   
+
+            </datalist>
+        </td>
+    </tr>
+    <tr>
+        <td><label for="jantina">Jantina:</label></td>
+        <td>:<input type="radio" name="jantina" id="jantina" value="Lelaki">Lelaki
+             <input type="radio" name="jantina" id="jantina" value="Perempuan">Perempuan</td>
+    </tr>
+    <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="text" name="email" id="email"></td>
+    </tr>
+    <tr>
+        <td><label for="katalaluan">Kata Laluan:</label></td>
+        <td><input type="password" name="katalaluan" id="katalaluan"></td>
+    </tr>
+
+    <tr>
+        <td><label for="comment"></label>
+        <td><textarea id="comment" name="comment" rows="4" cols="50" required placeholder="Leave your comment..."></textarea></td>
+    </tr>
+</table>
+
+    <button type="submit">SUBMIT</button>
+    <button type="reset">RESET</button>
+    
+</body>
+</html>
